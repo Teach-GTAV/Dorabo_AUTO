@@ -1,0 +1,2 @@
+- setup-file:
+    local-name: /program/ugv_ws/src/ugv_master/2Transform/obstacle_detection/build/devel/setup.sh

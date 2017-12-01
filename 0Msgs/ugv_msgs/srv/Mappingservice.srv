@@ -1,0 +1,3 @@
+geometry_msgs/PointStamped OriginWaypoint
+---
+geometry_msgs/PointStamped MappintWaypoint

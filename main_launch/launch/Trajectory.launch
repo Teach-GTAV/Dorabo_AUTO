@@ -1,0 +1,11 @@
+<!-- -->
+
+<launch>
+        <node pkg="map_processing" type="map_processing_node" name="map_processing" output="screen">
+        </node>
+
+        <node pkg="cb_local_planner" type="cb_local_planner_node" name="cb_local_planner" output="screen">
+        </node>
+
+
+</launch>

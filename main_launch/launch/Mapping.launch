@@ -1,0 +1,6 @@
+<!-- -->
+
+<launch>
+	<include file="$(find robot_center_mapping)/launch/robot_center_mapping.launch"></include>
+	<include file="$(find map_segmenter)/launch/map_segmenter.launch"></include>
+</launch>

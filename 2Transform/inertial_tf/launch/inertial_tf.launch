@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+
+<launch>
+
+	<node pkg="inertial_tf" type="inertial_tf_node" name="inertial_tf"> </node>
+</launch>

@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+
+<launch>
+
+  <!-- Launch the grid map simple demo node -->
+  <node pkg="robot_center_mapping" type="robot_center_mapping_node" name="center_mapping" output="screen" >
+    <param name="sub_pose"          type="string" value="/inertial_tf/pose" />
+    <param name="sub_plane"         type="string" value="/plane"	    />
+    <param name="sub_object"        type="string" value="/object"           />
+    <param name="sub_frot_object"   type="string" value="/obstacle_detection/cluster"          />
+    <param name="map_length"        type="double" value="30"                />
+    <param name="map_resolution"    type="double" value="0.4"               />
+    <param name="filter_radius"     type="double" value="1"                 />
+    <param name="block_circle"      type="double" value="0.0"               />
+    <param name="obstacleHeight"    type="double" value="-10"/>
+
+  </node>
+</launch>

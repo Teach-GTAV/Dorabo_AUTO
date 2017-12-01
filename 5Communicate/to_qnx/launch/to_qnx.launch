@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+
+<launch>
+	<node pkg="to_qnx" type="to_qnx_node" name="to_qnx_command" output="screen"> 
+	</node>
+</launch>

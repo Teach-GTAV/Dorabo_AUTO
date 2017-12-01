@@ -1,0 +1,9 @@
+<!-- -->
+<launch>
+        <node pkg ="tf2_ros" type="static_transform_publisher" name="vehicle_v64"   args="0 0 0.2 0 0 0 vehicle velodyne64"/>
+        <node pkg ="tf2_ros" type="static_transform_publisher" name="vehicle_v32"   args="0.66 0 -0.0360131 -1.579 0 -0.18 vehicle velodyne32"/>
+        <!--node pkg ="tf2_ros" type="static_transform_publisher" name="vehicle_v32"   args="0.66 0 -0.0360131 -1.579 0 -0.378 vehicle velodyne32"/-->
+        <node pkg ="tf2_ros" type="static_transform_publisher" name="vehicle_laser" args="-1.2 0 -1.2 3.1415926 0 3.1415926 vehicle laser"/>
+	<!--include file="$(find inertial_tf)/launch/inertial_tf.launch"> </include-->
+        <include file="$(find obstacle_detection)/launch/obstacle_detection.launch"> </include>
+</launch>

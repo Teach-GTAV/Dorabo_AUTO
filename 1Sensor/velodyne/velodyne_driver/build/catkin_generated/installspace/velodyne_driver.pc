@@ -1,0 +1,8 @@
+prefix=/usr/local
+
+Name: velodyne_driver
+Description: Description of velodyne_driver
+Version: 1.2.0
+Cflags: -I/usr/local/include
+Libs: -L/usr/local/lib -lvelodyne_input
+Requires: diagnostic_updater dynamic_reconfigure nodelet roscpp tf velodyne_msgs

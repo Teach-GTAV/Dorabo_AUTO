@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<launch>
+        <node pkg="obstacle_detection" type="obstacle_detection_node" name="obstacle_detection" output="screen">
+		<param name="filter_radius" type="double" value="0.3" />
+                <!--voxel_filter -->
+                <param name="voxel_grid_32_high" type="double" value="0.15"/>
+                <param name="voxel_grid_32_low" type="double" value="0.4"/>
+                <!--Region cut -->
+                <param name="cut_radius" type="double" value="1"/>
+                <param name="cut_min" type="double" value="2"/>
+                <param name="cut_max" type="double" value="20.0"/>
+                <param name="cut_min_x" type="double" value="1.5"/>
+                <param name="cut_max_x" type="double" value="5.5"/>
+                <param name="cut_min_y" type="double" value="-2"/>
+                <param name="cut_max_y" type="double" value="2"/>
+                <param name="cut_height" type="double" value="-1.5"/>
+
+                <!--param used to filtered ground plane-->
+                <param name="filter_ground_range" type="double" value="0.2"/>
+                <!--Euclidean Cluster Extraction -->
+                <param name="MinClusterSize" value="5"/>
+                <param name="MaxClusterSize" value="2500000"/>
+                <param name="ClusterTolerance" type="double" value="0.2"/>
+	</node>
+</launch>

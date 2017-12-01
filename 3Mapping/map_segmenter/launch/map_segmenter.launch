@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+
+<launch>
+
+  <!-- Launch the grid map simple demo node -->
+  <node pkg="map_segmenter" type="map_segmenter_node" name="map_segmenter" output="screen">
+    <param name="sub_image" type="string" value="/center_mapping/costmap" />
+    <param name="pub_image" type="string" value="map_seg" />
+  </node>
+
+</launch>

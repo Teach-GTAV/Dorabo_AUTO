@@ -1,0 +1,21 @@
+<package>
+	<name>to_qnx</name>
+	<version>0.0.0</version>
+	<description>
+	communicate with ADS to exchange control settings and status;
+	</description>
+	<maintainer email="chen0510566@163.com">Chen Cheng</maintainer>
+	<license>BSD</license>
+	<author>Chen Cheng</author>
+	<buildtool_depend>catkin</buildtool_depend>
+	  <build_depend>roscpp</build_depend>
+	  <build_depend>rospy</build_depend>
+	  <build_depend>std_msgs</build_depend>
+	  <build_depend>ugv_msgs</build_depend>
+	  <build_depend>dynamic_reconfigure</build_depend>
+	  <run_depend>dynamic_reconfigure</run_depend>
+	  <run_depend>roscpp</run_depend>
+	  <run_depend>rospy</run_depend>
+	  <run_depend>std_msgs</run_depend>
+	  <run_depend>ugv_msgs</run_depend>
+</package>

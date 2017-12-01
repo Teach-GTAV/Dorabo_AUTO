@@ -1,0 +1,17 @@
+<!-- -->
+
+<launch>
+	<!--include file="$(find main_launch)/launch/Sensor.launch"></include-->
+	<include file="$(find main_launch)/launch/Transform.launch">	</include>
+	<include file="$(find main_launch)/launch/Mapping.launch">	</include>
+	<!--include file="$(find local_planner)/launch/local_planner.launch">	</include-->
+
+	<!--include file="$(find main_launch)/launch/Trajectory.launch"></include-->
+	<!--include file="$(find main_launch)/launch/Waypointmapping.launch"></include-->
+	<!--include file="$(find to_qnx)/launch/to_qnx.launch"></include-->
+
+	<!--node name="rqt_gui" pkg = "rqt_gui" type="rqt_gui"/-->
+
+  	<node name="rviz" pkg="rviz" type="rviz" />
+	<!--node name="rqt_graph" pkg="rqt_graph" type="rqt_graph"/-->
+</launch>

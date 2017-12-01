@@ -1,0 +1,8 @@
+prefix=/program/ugv_ws/src/ugv_master/1Sensor/velodyne/velodyne_driver/build/devel
+
+Name: velodyne_driver
+Description: Description of velodyne_driver
+Version: 1.2.0
+Cflags: -I/program/ugv_ws/src/ugv_master/1Sensor/velodyne/velodyne_driver/build/devel/include -I/program/ugv_ws/src/ugv_master/1Sensor/velodyne/velodyne_driver/include
+Libs: -L/program/ugv_ws/src/ugv_master/1Sensor/velodyne/velodyne_driver/build/devel/lib -lvelodyne_input
+Requires: diagnostic_updater dynamic_reconfigure nodelet roscpp tf velodyne_msgs

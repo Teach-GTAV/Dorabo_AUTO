@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+
+<launch>
+
+  <node pkg="lidar_odometry" type="lidar_odometry_node" name="lidar_odometry" output="screen" >
+    <param name="subCloud" type="string" value="/object" />
+    <param name="pubGlobalMap" type="string" value="/global_map" />
+    <param name="voxel_filter" type="double" value="0.4"/>
+  </node>
+
+</launch>
+
